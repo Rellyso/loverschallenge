@@ -1,0 +1,182 @@
+[
+  {
+    "level": 1,
+    "description": "para aqueles que estão desbravando o mundo dos campeonatos crosstrainning",
+    "parameters": [
+      {
+        "exercise": "CLEAN AND JERK",
+        "info": "40/25"
+      },
+      {
+        "exercise": "SNATCH",
+        "info": "30/20"
+      },
+      {
+        "exercise": "THRUSTER",
+        "info": "30/20"
+      },
+      {
+        "exercise": "KETTLEBELL",
+        "info": "16/10"
+      },
+      {
+        "exercise": "DUMBBELL",
+        "info": "16/10"
+      },
+      {
+        "exercise": "DEADLIFT",
+        "info": "60/40"
+      },
+      {
+        "exercise": "WALLBALL",
+        "info": "14/10"
+      },
+      {
+        "exercise": "FRONT SQUAT",
+        "info": "SIM"
+      },
+      {
+        "exercise": "S.U",
+        "info": "SIM"
+      },
+      {
+        "exercise": "BOX JUMP",
+        "info": "50CM STEP UP"
+      }
+    ],
+    "gymnastic": [
+      {
+        "exercise": "PULL UP",
+        "info": "SIM"
+      },
+      {
+        "exercise": "TOES TO BAR",
+        "info": "1 ATLETA"
+      },
+      {
+        "exercise": "HSPU",
+        "info": "1 ATLETA"
+      }
+    ]
+  },
+  {
+    "level": 2,
+    "description": "para aqueles que tem confiança e tem vontade de ir além no seu potencial",
+    "parameters": [
+      {
+        "exercise": "CLEAN AND JERK",
+        "info": "50/35"
+      },
+      {
+        "exercise": "SNATCH",
+        "info": "40/30"
+      },
+      {
+        "exercise": "THRUSTER",
+        "info": "40/30"
+      },
+      {
+        "exercise": "KETTLEBELL",
+        "info": "20/14"
+      },
+      {
+        "exercise": "DUMBBELL",
+        "info": "20/14"
+      },
+      {
+        "exercise": "DEADLIFT",
+        "info": "80/50"
+      },
+      {
+        "exercise": "WALLBALL",
+        "info": "20/14"
+      },
+      {
+        "exercise": "FRONT SQUAT",
+        "info": "SIM"
+      },
+      {
+        "exercise": "S.U",
+        "info": "SIM"
+      },
+      {
+        "exercise": "BOX JUMP",
+        "info": "60CM/50CM"
+      }
+    ],
+    "gymnastic": [
+      {
+        "exercise": "PULL UP",
+        "info": "SIM"
+      },
+      {
+        "exercise": "TOES TO BAR",
+        "info": "1 ATLETA"
+      },
+      {
+        "exercise": "HSPU",
+        "info": "1 ATLETA"
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "description": "para aqueles RX do box (rsrs) ou que sentem confiança nos movimentos mais avançados",
+    "parameters": [
+      {
+        "exercise": "CLEAN AND JERK",
+        "info": "60/45"
+      },
+      {
+        "exercise": "SNATCH",
+        "info": "50/35"
+      },
+      {
+        "exercise": "THRUSTER",
+        "info": "50/35"
+      },
+      {
+        "exercise": "KETTLEBELL",
+        "info": "24/16"
+      },
+      {
+        "exercise": "DUMBBELL",
+        "info": "22/16"
+      },
+      {
+        "exercise": "DEADLIFT",
+        "info": "100/70"
+      },
+      {
+        "exercise": "WALLBALL",
+        "info": "20/14"
+      },
+      {
+        "exercise": "OVERHEAD SQUAT",
+        "info": "SIM"
+      },
+      {
+        "exercise": "D.U",
+        "info": "SIM"
+      },
+      {
+        "exercise": "BOX JUMP",
+        "info": "60CM/50CM"
+      }
+    ],
+    "gymnastic": [
+      {
+        "exercise": "CTB/BMU",
+        "info": "BMU - 1 ATLETA"
+      },
+      {
+        "exercise": "TOES TO BAR",
+        "info": "SIM"
+      },
+      {
+        "exercise": "HSPU",
+        "info": "SIM"
+      }
+    ]
+  }
+]

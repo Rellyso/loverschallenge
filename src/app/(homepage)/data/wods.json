@@ -1,0 +1,221 @@
+[
+  {
+    "id": 1,
+    "name": "PROVA 1",
+    "time": 10,
+    "title": "6 ROUNDS",
+    "workout": [
+      {
+        "reps": 10,
+        "description": "shuttle run (10M)"
+      },
+      {
+        "reps": 10,
+        "description": "walk lunge",
+        "observations": [
+          "Nível 1 e 2: Front Rack",
+          "Nível 3: Overhead"
+        ]
+      }
+    ],
+    "info": [
+      "1 round por atleta"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "PROVAS 2 E 3 (COMPLEX)",
+    "time": 7,
+    "title": "TIME CAP",
+    "workout": [
+      {
+        "description": "ACHAR A CARGA MÁXIMA PARA 3 CLEAN",
+        "observations": [
+          "Prova 2: PR FEMININO",
+          "Prova 3: PR MASCULINO"
+        ]
+      }
+    ],
+    "info": [
+      "2 minutos de rest e continua na prova 3..."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "PROVA 4",
+    "time": 3,
+    "title": "TIME CAP",
+    "workout": [
+      {
+        "description": "TONELAGEM DE CLEAN AND JERK (SYNC)"
+      }
+    ],
+    "info": [
+      "SOMATÓRIA: HOMEM + MULHER"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "PROVA 5",
+    "time": 12,
+    "title": "FOR TIME",
+    "workout": [
+      {
+        "reps": 40,
+        "description": "D.U UNBK",
+        "observations": [
+          "Single under: 80 reps",
+          "Nível 1: Normal",
+          "Nível 2: Unbroken"
+        ]
+      },
+      {
+        "reps": 40,
+        "description": "STEP UP OVER"
+      },
+      {
+        "reps": 10,
+        "description": "THRUSTER SYNCRO",
+        "hasSpace": true
+      },
+      {
+        "reps": 30,
+        "description": "D.U UNBK",
+        "observations": [
+          "Single under: 60 reps",
+          "Nível 1: Normal",
+          "Nível 2: Unbroken"
+        ]
+      },
+      {
+        "reps": 30,
+        "description": "STEP UP OVER"
+      },
+      {
+        "reps": 10,
+        "description": "THRUSTER SYNCRO",
+        "hasSpace": true
+      },
+      {
+        "reps": 20,
+        "description": "D.U UNBK",
+        "observations": [
+          "Single under: 40 reps",
+          "Nível 1: Normal",
+          "Nível 2: Unbroken"
+        ]
+      },
+      {
+        "reps": 20,
+        "description": "STEP UP OVER"
+      },
+      {
+        "reps": 10,
+        "description": "THRUSTER SYNCRO",
+        "hasSpace": true
+      },
+      {
+        "reps": 10,
+        "description": "D.U UNBK",
+        "observations": [
+          "Single under: 20 reps",
+          "Nível 1: Normal",
+          "Nível 2: Unbroken"
+        ]
+      },
+      {
+        "reps": 10,
+        "description": "STEP UP OVER"
+      },
+      {
+        "reps": 10,
+        "description": "THRUSTER SYNCRO"
+      }
+    ],
+    "info": [
+      "NÍVEL 1: MASC 30kg / FEM 20kg",
+      "NÍVEL 2: MASC 40kg / FEM 30kg",
+      "NÍVEL 3: MASC 50kg / FEM 35kg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "PROVAS 6 (A) E 7 (B)",
+    "time": 3,
+    "title": "FOR TIME",
+    "workout": [
+      {
+        "head": "NÍVEIS 2 E 3",
+        "reps": 8,
+        "description": "WALLBALL"
+      },
+      {
+        "reps": 6,
+        "description": "KTB SWING"
+      },
+      {
+        "reps": 4,
+        "description": "PULL UP/C2B/BMU",
+        "observations": [
+          "Nível 2: Ambos fazem PULL UP",
+          "Nível 3: Mulher faz C2B; Homem faz BMU"
+        ]
+      },
+      {
+        "reps": 2,
+        "description": "DEVIL PRESS",
+        "hasSpace": true
+      },
+      {
+        "head": "NÍVEL 1",
+        "reps": 10,
+        "description": "WALLBALL"
+      },
+      {
+        "reps": 8,
+        "description": "KTB SWING"
+      },
+      {
+        "reps": 4,
+        "description": "DEVIL PRESS"
+      }
+    ],
+    "info": [
+      "ATLETA (A) INICIA, ATLETA (B) REPETE",
+      "ATLETA (A) DISPUTA COM TODOS OS ATLETAS (A)",
+      "ATLETA (B) DISPUTA COM TODOS OS ATLETAS (B)"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "PROVAS 8 E 9",
+    "time": 8,
+    "title": "AMRAP",
+    "workout": [
+      {
+        "head": "DE 0' À 4'",
+        "reps": 10,
+        "description": "HSPU / HRPU"
+      },
+      {
+        "reps": 10,
+        "description": "FRONT SQUAT",
+        "hasSpace": true
+      },
+      {
+        "head": "DE 4' À 8'",
+        "reps": 10,
+        "description": "TOES TO BAR / L-SIT"
+      },
+      {
+        "reps": 15,
+        "description": "DEAD LIFT",
+        "hasSpace": true
+      }
+    ],
+    "info": [
+      "F: 30/40/50",
+      "M: 40/50/60"
+    ]
+  }
+]
