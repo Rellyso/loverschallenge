@@ -59,9 +59,9 @@ export function AlertDialog({
             className={clsx(
               'fixed z-50',
               'w-[95vw] max-w-md rounded-lg p-4 md:w-full',
-              'top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]',
+              'left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]',
               'bg-white dark:bg-gray-500',
-              'border border-px border-gray-400',
+              'border-px border border-gray-400',
               'focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75',
             )}
           >
@@ -75,9 +75,9 @@ export function AlertDialog({
               <Cancel
                 className={clsx(
                   'inline-flex select-none justify-center rounded-md px-4 py-2 text-sm font-medium',
-                  'text-white hover:bg-gray-400 bg-gray-500 transition-colors',
+                  'bg-gray-500 text-white transition-colors hover:bg-gray-400',
                   'border border-transparent',
-                  'focus:outline-none focus-visible:ring focus-visible:ring-blue focus-visible:ring-opacity-75',
+                  'focus-visible:ring-blue focus:outline-none focus-visible:ring focus-visible:ring-opacity-75',
                 )}
               >
                 {cancelMessage || 'Cancelar'}
@@ -85,9 +85,9 @@ export function AlertDialog({
               <Action
                 onClick={onConfirm}
                 className={clsx(
-                  'bg-zinc-900 text-gray-200 hover:brightness-105 transition-colors',
-                  'font-semibold px-2 py-1 rounded-md',
-                  'focus:outline-none focus-visible:ring focus-visible:ring-blue ring-offset-2 ring-offset-gray-500',
+                  'bg-zinc-900 text-gray-200 transition-colors hover:brightness-105',
+                  'rounded-md px-2 py-1 font-semibold',
+                  'focus-visible:ring-blue ring-offset-2 ring-offset-gray-500 focus:outline-none focus-visible:ring',
                 )}
               >
                 {confirmMessage}

@@ -5,5 +5,5 @@ interface NumberContainerProps {
 }
 
 export function NumberContainer({ children }: NumberContainerProps) {
-  return <span className="bg-zinc-900 py-1 px-2 rounded-md">{children}</span>
+  return <span className="rounded-md bg-zinc-900 px-2 py-1">{children}</span>
 }

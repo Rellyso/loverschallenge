@@ -20,24 +20,24 @@ export function Section({
     <section
       id={id}
       className={clsx(
-        'w-full bg-primary p-8 md:p-16 flex flex-col gap-8',
+        'flex w-full flex-col gap-8 bg-primary p-8 md:p-16',
         className,
       )}
     >
       {title && (
-        <div className="w-full max-w-screen-xl flex items-center justify-between mx-auto">
-          <div className="flex items-start flex-col gap-2">
-            <h2 className="text-4xl md:text-5xl font-anton uppercase">
+        <div className="mx-auto flex w-full max-w-screen-xl items-center justify-between">
+          <div className="flex flex-col items-start gap-2">
+            <h2 className="font-anton text-4xl uppercase md:text-5xl">
               {title}
             </h2>
             {subtitle && (
-              <p className="text-lg md:text-xl font-normal">{subtitle}</p>
+              <p className="text-lg font-normal md:text-xl">{subtitle}</p>
             )}
           </div>
         </div>
       )}
 
-      <div className="w-full max-w-screen-xl flex mx-auto flex-col">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col">
         {children}
       </div>
     </section>
