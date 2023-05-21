@@ -170,7 +170,7 @@ const teams = [
   {
     id: 18,
     name: 'M&Ms',
-    athletes: ['João Victor', 'Mariana'],
+    athletes: ['João Victor', 'Marina'],
     box: 'Box TEC',
     level: 1,
     battery: 3,
