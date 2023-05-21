@@ -148,7 +148,7 @@
   {
     "id": 5,
     "name": "PROVAS 6 (A) E 7 (B)",
-    "time": 3,
+    "time": 7,
     "title": "FOR TIME",
     "workout": [
       {
@@ -188,6 +188,7 @@
       }
     ],
     "info": [
+      "7' ATEta a, 1' rest, 7' Atleta b",
       "ATLETA (A) INICIA, ATLETA (B) REPETE",
       "ATLETA (A) DISPUTA COM TODOS OS ATLETAS (A)",
       "ATLETA (B) DISPUTA COM TODOS OS ATLETAS (B)"

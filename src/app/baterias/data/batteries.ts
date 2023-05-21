@@ -14,7 +14,7 @@ const teams = [
   // bateria 1 - nível 1
   {
     id: 1,
-    name: 'O bela e a fera',
+    name: 'O belo e a fera',
     box: 'Box 490',
     athletes: ['ALDENOR', 'THAYNARA'],
     battery: 1,
@@ -224,7 +224,7 @@ const teams = [
   },
   {
     id: 24,
-    name: 'Vivemos para se divertir',
+    name: 'Viemos para se divertir',
     athletes: ['Sávio', 'Francisca Dara'],
     box: 'Box 490',
     level: 1,
@@ -262,7 +262,7 @@ const teams = [
   {
     id: 28,
     name: 'Cobaias do Sertão',
-    athletes: ['Pedro Lucas', 'Francisca'],
+    athletes: ['Marcondes', 'Larissa'],
     box: 'Sertão',
     level: 2,
     battery: 5,
