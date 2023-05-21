@@ -50,7 +50,7 @@ const teams = [
   },
   {
     id: 5,
-    name: 'Nervosinho e Sem Coragem',
+    name: 'Nervosinha e Sem Coragem',
     box: 'Box Luminus',
     athletes: ['IGOR', 'GABRIELI'],
     level: 1,
