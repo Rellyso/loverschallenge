@@ -20,6 +20,7 @@ module.exports = {
           'linear-gradient(180deg, rgba(0, 240, 166, 0) 0%, rgba(0, 240, 166, 0.1) 100%);',
         textGreen: 'url("/assets/green-text-bg.svg")',
         textWhite: 'url("/assets/white-text-bg.svg")',
+        lote: 'url("/assets/bg-lote.webp")',
       },
       blur: {
         full: '194px',

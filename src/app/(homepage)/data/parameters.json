@@ -47,15 +47,15 @@
     "gymnastic": [
       {
         "exercise": "PULL UP",
+        "info": "NÃO"
+      },
+      {
+        "exercise": "KNEE RAISES",
         "info": "SIM"
       },
       {
-        "exercise": "TOES TO BAR",
-        "info": "1 ATLETA"
-      },
-      {
-        "exercise": "HSPU",
-        "info": "1 ATLETA"
+        "exercise": "HRPU",
+        "info": "SIM"
       }
     ]
   },

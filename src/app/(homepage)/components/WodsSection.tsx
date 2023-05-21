@@ -112,7 +112,7 @@ export function WodsSection() {
                   {exercise.reps && (
                     <p className="text-xl font-semibold">{exercise.reps}</p>
                   )}
-                  <span className="text-xl font-normal">
+                  <span className="text-xl font-normal uppercase">
                     {exercise.description}
                   </span>
                 </div>

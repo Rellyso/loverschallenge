@@ -4,10 +4,15 @@
     "name": "PROVA 1",
     "time": 10,
     "title": "6 ROUNDS",
+    "subtitle": "PROVA 1",
     "workout": [
       {
         "reps": 10,
         "description": "shuttle run (10M)"
+      },
+      {
+        "reps": 10,
+        "description": "Snatch"
       },
       {
         "reps": 10,
@@ -27,6 +32,7 @@
     "name": "PROVAS 2 E 3 (COMPLEX)",
     "time": 7,
     "title": "TIME CAP",
+    "subtitle": "PROVAS 2, 3 E 4",
     "workout": [
       {
         "description": "ACHAR A CARGA MÁXIMA PARA 3 CLEAN",
@@ -57,6 +63,7 @@
   {
     "id": 4,
     "name": "PROVA 5",
+    "subtitle": "PROVA 5",
     "time": 12,
     "title": "FOR TIME",
     "workout": [

@@ -39,7 +39,7 @@ export function Header() {
   return (
     <header
       className={clsx(
-        'absolute left-0 top-0 flex h-16 w-full items-center px-8 md:px-16',
+        'absolute left-0 top-0 z-50 flex h-16 w-full items-center px-8 md:px-16',
       )}
     >
       <div className="mx-auto flex h-full w-full max-w-screen-xl items-center justify-between">

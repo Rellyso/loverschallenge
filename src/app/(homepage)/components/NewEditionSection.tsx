@@ -1,6 +1,7 @@
 import { Section } from '@/app/components/Section'
 import { Button } from '@/app/components/buttons/Button'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 export function NewEditionSection() {
   return (
@@ -53,6 +54,26 @@ export function NewEditionSection() {
               // className="bg-transparent border-zinc-100 border text-zinc-100"
             >
               <a href="#wods">Ver provas</a>
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16 flex flex-col justify-end gap-8 self-end text-right">
+        <div className="flex flex-col items-end gap-1 self-end">
+          <hr className="h-1 w-16 border-none bg-primary" />
+          <h3 className="text-lg font-bold text-primary">
+            Quais os horários das provas?
+          </h3>
+        </div>
+        <div className="flex flex-col gap-4">
+          <p className="w-full max-w-[520px] text-base font-semibold md:text-2xl">
+            Disponibilizamos o horário de todas as baterias para comodidade na
+            organização dos atletas.
+          </p>
+          <div className="flex items-end justify-end gap-2">
+            <Button variant="tertiary" asChild>
+              <Link href="/baterias">Ver horários</Link>
             </Button>
           </div>
         </div>
