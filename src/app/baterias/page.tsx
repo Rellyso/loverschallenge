@@ -36,9 +36,11 @@ export default function Schedules() {
                     </p>
                   </span>
 
-                  <div className="flex w-full flex-col items-center gap-2 rounded-xl bg-zinc-100 p-4">
-                    <span className="text-2xl font-bold">{time}</span>
-                    <hr className="h-[2px] w-8 bg-zinc-950" />
+                  <div className="flex w-full flex-col items-center rounded-xl bg-zinc-100 p-4">
+                    <div className="sticky top-0 mb-2 flex w-full flex-col items-center gap-2 pt-2 backdrop-blur-sm">
+                      <span className="text-2xl font-bold">{time}</span>
+                      <hr className="h-[2px] w-8 bg-zinc-950" />
+                    </div>
                     <div className="flex w-full flex-col">
                       {teams.map((team) => {
                         return (
