@@ -143,7 +143,7 @@ const teams = [
   {
     id: 15,
     name: 'Só vim pela camisa',
-    athletes: ['Francisco Carlos', 'Maria Giselle'],
+    athletes: ['Francisco Carlos', 'Mara Giselle'],
     box: 'Box 490',
     level: 1,
     battery: 3,

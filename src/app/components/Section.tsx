@@ -20,7 +20,7 @@ export function Section({
     <section
       id={id}
       className={clsx(
-        'flex w-full flex-col gap-8 bg-primary p-8 md:p-16',
+        'flex w-full flex-col gap-8 bg-primary px-4 py-6 sm:p-8 md:p-16',
         className,
       )}
     >
