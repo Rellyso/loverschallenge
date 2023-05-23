@@ -57,7 +57,7 @@ export function WodsSection() {
       >
         {wods.map((wod) => (
           <div
-            key={wod.title}
+            key={`${wod.title}-${wod.time}`}
             className={clsx(
               'flex h-full flex-col justify-between gap-8 rounded-2xl bg-primary px-6 py-8 text-zinc-950 sm:py-12 md:gap-16',
             )}
@@ -125,8 +125,8 @@ export function WodsSection() {
           </span>
 
           <div className="flex flex-col gap-2 text-base">
-            {activeWod?.info.map((infoItem) => (
-              <p className="uppercase" key={infoItem}>
+            {activeWod?.info.map((infoItem, i) => (
+              <p className="uppercase" key={`${infoItem}#${i}`}>
                 - {infoItem}
               </p>
             ))}

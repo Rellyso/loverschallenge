@@ -1,6 +1,7 @@
 import { Section } from '@/app/components/Section'
 import { Button } from '@/app/components/buttons/Button'
 import clsx from 'clsx'
+import { MapPin } from 'lucide-react'
 import Link from 'next/link'
 
 export function NewEditionSection() {
@@ -32,6 +33,7 @@ export function NewEditionSection() {
         </div>
       </div>
 
+      {/* Left */}
       <div className="mt-16 flex flex-col gap-8">
         <div className="flex flex-col gap-1">
           <hr className="h-1 w-16 border-none bg-primary" />
@@ -59,6 +61,7 @@ export function NewEditionSection() {
         </div>
       </div>
 
+      {/* Right */}
       <div className="mt-16 flex flex-col justify-end gap-8 self-end text-right">
         <div className="flex flex-col items-end gap-1 self-end">
           <hr className="h-1 w-16 border-none bg-primary" />
@@ -74,6 +77,51 @@ export function NewEditionSection() {
           <div className="flex items-end justify-end gap-2">
             <Button variant="tertiary" asChild>
               <Link href="/baterias">Ver horários</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Left */}
+      <div className="mt-16 flex flex-col gap-8">
+        <div className="flex flex-col gap-1">
+          <hr className="h-1 w-16 border-none bg-primary" />
+          <h3 className="text-lg font-bold text-primary">
+            Onde será realizado o evento?
+          </h3>
+        </div>
+        <div className="flex flex-col gap-4">
+          <p className="w-full max-w-[520px] text-base font-semibold md:text-2xl">
+            Serão dois dias de evento. No day one (primeiro dia) o evento será
+            realizado no society da avenida Integração. Já no segundo dia, no CT
+            Crossover.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <Button variant="tertiary" asChild>
+              <a
+                href="https://goo.gl/maps/1iBPspwvhrV9CvX9A"
+                target="_blank"
+                className="space-x-1"
+                rel="noreferrer"
+              >
+                <MapPin />
+                Society (day 1)
+              </a>
+            </Button>
+            <Button
+              variant="secondary"
+              asChild
+              // className="bg-transparent border-zinc-100 border text-zinc-100"
+            >
+              <a
+                href="https://goo.gl/maps/oJPxk4VHUP5AWjeW8"
+                target="_blank"
+                className="space-x-1"
+                rel="noreferrer"
+              >
+                <MapPin />
+                CT Crossover (day 2)
+              </a>
             </Button>
           </div>
         </div>
