@@ -4,6 +4,8 @@ import { NumberContainer } from './NumberContainer'
 import { Fragment, useEffect, useState } from 'react'
 import clsx from 'clsx'
 
+const DATE_DIFFERENCE = [new Date('05/27/2023'), new Date()]
+
 const TIME_COUNT = {
   days: 60 * 60 * 24,
   hours: 60 * 60,
@@ -15,10 +17,17 @@ export function Countdown() {
   const [currentSeconds, setCurrentSeconds] = useState(0)
 
   useEffect(() => {
+    if (differenceInSeconds(DATE_DIFFERENCE[0], DATE_DIFFERENCE[1]) < 0) {
+      setCurrentSeconds(-1)
+      return () => {
+        clearInterval(interval)
+      }
+    }
+
     const interval = setInterval(() => {
       const secondsDifference = differenceInSeconds(
-        new Date('05/27/2023'),
-        new Date(),
+        DATE_DIFFERENCE[0],
+        DATE_DIFFERENCE[1],
       )
 
       setCurrentSeconds(secondsDifference)
@@ -51,7 +60,7 @@ export function Countdown() {
     },
   ].filter(({ key, value }) => !(key === 'Dias' && value === 0))
 
-  console.log(currentSeconds)
+  if (currentSeconds < 0) return <div></div>
 
   return (
     <div className="flex flex-col justify-end gap-2 text-right md:justify-center">
@@ -64,17 +73,18 @@ export function Countdown() {
           'sm:text-4xl md:text-6xl',
         )}
       >
-        {counterIterator.map(({ key, value }, i) => {
-          const counterValue = String(value).padStart(2, '0')
+        {currentSeconds > 0 &&
+          counterIterator.map(({ key, value }, i) => {
+            const counterValue = String(value).padStart(2, '0')
 
-          return (
-            <Fragment key={key}>
-              {i !== 0 && <div className="w-4 text-primary md:w-8">:</div>}
-              <NumberContainer>{counterValue[0]}</NumberContainer>
-              <NumberContainer>{counterValue[1]}</NumberContainer>
-            </Fragment>
-          )
-        })}
+            return (
+              <Fragment key={key}>
+                {i !== 0 && <div className="w-4 text-primary md:w-8">:</div>}
+                <NumberContainer>{counterValue[0]}</NumberContainer>
+                <NumberContainer>{counterValue[1]}</NumberContainer>
+              </Fragment>
+            )
+          })}
       </div>
     </div>
   )
