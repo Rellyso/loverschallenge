@@ -50,6 +50,7 @@ export function Hero() {
       <video
         src="/assets/videobg.mp4"
         autoPlay
+        playsInline
         loop
         muted
         className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"

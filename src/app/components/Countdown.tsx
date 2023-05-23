@@ -17,7 +17,7 @@ export function Countdown() {
   useEffect(() => {
     const interval = setInterval(() => {
       const secondsDifference = differenceInSeconds(
-        new Date('05-27-2023'),
+        new Date('05/27/2023'),
         new Date(),
       )
 
@@ -50,6 +50,8 @@ export function Countdown() {
       value: secondsAmount,
     },
   ].filter(({ key, value }) => !(key === 'Dias' && value === 0))
+
+  console.log(currentSeconds)
 
   return (
     <div className="flex flex-col justify-end gap-2 text-right md:justify-center">
