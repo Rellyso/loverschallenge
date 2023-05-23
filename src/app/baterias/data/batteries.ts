@@ -104,22 +104,13 @@ const teams = [
     lane: 4,
   },
   {
-    id: 11,
-    name: 'Se gritar eu faço',
-    athletes: ['Eduardo', 'Mariana'],
-    box: 'Box Selva',
-    level: 1,
-    battery: 2,
-    lane: 5,
-  },
-  {
     id: 12,
     name: 'A Bela e a Fera',
     athletes: ['Guilherme', 'Ingrid'],
     box: 'Box TEC',
     level: 1,
     battery: 2,
-    lane: 6,
+    lane: 5,
   },
   // Bateria 3 - Nível 1
   {
@@ -285,6 +276,15 @@ const teams = [
     level: 2,
     battery: 5,
     lane: 6,
+  },
+  {
+    id: 11,
+    name: 'Se gritar eu faço',
+    athletes: ['Eduardo', 'Ana Claudia'],
+    box: 'Box Selva',
+    level: 2,
+    battery: 5,
+    lane: 7,
   },
   // Bateria 6 - Nível 2
   {
