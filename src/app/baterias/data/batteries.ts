@@ -181,7 +181,7 @@ const teams = [
     id: 20,
     name: '100% héteros',
     athletes: ['Jamerson', 'Denyse'],
-    box: 'Armazém,',
+    box: 'Armazém',
     level: 1,
     battery: 4,
     lane: 2,
