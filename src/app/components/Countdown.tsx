@@ -4,7 +4,7 @@ import { NumberContainer } from './NumberContainer'
 import { Fragment, useEffect, useState } from 'react'
 import clsx from 'clsx'
 
-const DATE_DIFFERENCE = [new Date('05/27/2023'), new Date()]
+const DATE_DIFFERENCE = new Date('05/27/2023')
 
 const TIME_COUNT = {
   days: 60 * 60 * 24,
@@ -16,8 +16,10 @@ const TIME_COUNT = {
 export function Countdown() {
   const [currentSeconds, setCurrentSeconds] = useState(0)
 
+  console.log()
+
   useEffect(() => {
-    if (differenceInSeconds(DATE_DIFFERENCE[0], DATE_DIFFERENCE[1]) < 0) {
+    if (differenceInSeconds(DATE_DIFFERENCE, new Date()) < 0) {
       setCurrentSeconds(-1)
       return () => {
         clearInterval(interval)
@@ -25,10 +27,7 @@ export function Countdown() {
     }
 
     const interval = setInterval(() => {
-      const secondsDifference = differenceInSeconds(
-        DATE_DIFFERENCE[0],
-        DATE_DIFFERENCE[1],
-      )
+      const secondsDifference = differenceInSeconds(DATE_DIFFERENCE, new Date())
 
       setCurrentSeconds(secondsDifference)
     }, 1000)
