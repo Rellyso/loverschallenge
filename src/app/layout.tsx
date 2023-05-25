@@ -5,6 +5,7 @@ import '@/styles/global.tw.css'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Analytics } from '@/components/Analytics'
+import { Metadata } from 'next'
 
 const anton = Anton({
   subsets: ['latin'],
@@ -20,8 +21,12 @@ const robotoMono = RobotoMono({
   variable: '--font-mono',
 })
 
-export const metadata = {
-  title: 'Lovers Challenge by Crossover',
+export const metadata: Metadata = {
+  title: {
+    default: 'Lovers Challenge by Crossover',
+    template: '%s | Lovers Challenge',
+  },
+
   description:
     'Campeonato misto em Mossoró-RN oferecido pelo box Crossover. Site by: rellyson',
 }

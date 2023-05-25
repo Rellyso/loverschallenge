@@ -3,6 +3,11 @@ import { Section } from '../components/Section'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { isBefore } from 'date-fns'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Classificação',
+}
 
 export default function Schedules() {
   const isBeforeDate = isBefore(new Date(), new Date('05/27/2023'))

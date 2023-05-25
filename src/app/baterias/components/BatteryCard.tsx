@@ -73,7 +73,7 @@ export function BatteryCard({ teams, times, battery }: BatteryCardProps) {
 
       <Button onClick={downloadBattery} className="mt-2">
         <ArrowDownToLine className="h-5 w-5" />
-        Exportar bateria
+        Baixar horários
       </Button>
 
       {/* download section */}

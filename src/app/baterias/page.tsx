@@ -2,6 +2,11 @@ import { Section } from '../components/Section'
 import { CalendarClock, Info } from 'lucide-react'
 import { batteriesDayOne } from './data/batteries'
 import { BatteryCard } from './components/BatteryCard'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Baterias e horários',
+}
 
 export default function Schedules() {
   return (
