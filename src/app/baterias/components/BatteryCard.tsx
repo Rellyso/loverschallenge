@@ -80,12 +80,14 @@ export function BatteryCard({ teams, times, battery }: BatteryCardProps) {
       <div className={clsx('absolute -right-full ', 'h-0 w-0 overflow-hidden')}>
         <div
           ref={cardRef}
-          className="bg-green flex w-[1080px] flex-col items-center justify-center gap-4 bg-primary bg-textGreen bg-bottom bg-repeat-x px-10 py-8"
+          className="bg-green flex aspect-[9/16] w-[750px] flex-col items-center justify-center gap-4 bg-primary bg-textGreen bg-bottom bg-repeat-x px-10 py-8"
         >
           <span className="flex items-center gap-2 text-2xl">
             <Image src={Logo} alt="Logo lovers Challenge" className="w-24" />
             Bateria <b>#{battery}</b>
           </span>
+
+          <h2 className="mb-2 text-4xl">Horários</h2>
 
           <div className="flex w-full flex-col items-center rounded-xl bg-zinc-100 p-4 ">
             <div className="sticky top-0 mb-2 flex w-full justify-center gap-4 pt-2 backdrop-blur-sm">
