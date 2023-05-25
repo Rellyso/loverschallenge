@@ -1,6 +1,7 @@
 import { Section } from '../components/Section'
-import { CalendarClock, ScrollText } from 'lucide-react'
-import { getWodById, wodBatteries } from './data/batteries'
+import { CalendarClock, Info } from 'lucide-react'
+import { batteriesDayOne } from './data/batteries'
+import { BatteryCard } from './components/BatteryCard'
 
 export default function Schedules() {
   return (
@@ -17,62 +18,36 @@ export default function Schedules() {
         subtitle="Confira o horário das provas do dia 1"
         className="text-zinc-950"
       >
-        {wodBatteries.map(({ wodId, times }) => {
-          const wod = getWodById(wodId)
+        <div className="space-y-4">
+          <div className="flex items-center justify-center gap-2 rounded-md bg-blue-300 p-4">
+            <Info className="h-8 w-8 text-blue-800" />
+            <span className="text-base leading-relaxed">
+              Ajustamos as baterias para deixar a visualização dos horários mais
+              rápida e prática! <b>Ahhhhh</b>, e agora dá pra{' '}
+              <b>baixar seus horários e compartilhar nas redes</b> 💚😎
+            </span>
+          </div>
+          {batteriesDayOne.map((battery) => (
+            <div key={`${battery.battery}`} className="space-y-8">
+              <div className="space-y-4">
+                <span className="flex items-center gap-2">
+                  <h3 className="text-xl uppercase">
+                    Bateria {battery.battery}
+                  </h3>
+                  <p className="rounded-lg bg-zinc-950 px-2 py-1 text-primary">
+                    Nível {battery.level}
+                  </p>
+                </span>
 
-          return (
-            <div key={`${wodId}`} className="space-y-8">
-              <h2 className="mb-4 mt-8 flex items-center justify-center gap-1 text-xl font-bold uppercase md:text-2xl">
-                <ScrollText />
-                {wod.subtitle} - Day 1
-              </h2>
-
-              {times.map(({ time, teams, level, battery }) => (
-                <div className="space-y-4" key={time}>
-                  <span className="flex items-center gap-2">
-                    <h3 className="text-xl uppercase">Bateria {battery}</h3>
-                    <p className="rounded-lg bg-zinc-950 px-2 py-1 text-primary">
-                      Nível {level}
-                    </p>
-                  </span>
-
-                  <div className="flex w-full flex-col items-center rounded-xl bg-zinc-100 p-4">
-                    <div className="sticky top-0 mb-2 flex w-full flex-col items-center gap-2 pt-2 backdrop-blur-sm">
-                      <span className="text-2xl font-bold">{time}</span>
-                      <hr className="h-[2px] w-8 bg-zinc-950" />
-                    </div>
-                    <div className="flex w-full flex-col">
-                      {teams.map((team) => {
-                        return (
-                          <div
-                            key={team.id}
-                            className="flex items-center gap-4 border-b-2 py-2 leading-tight last:border-b-0 sm:flex-nowrap"
-                          >
-                            <span className="flex h-8 w-8 flex-col items-center justify-center rounded-full bg-primary p-2 text-sm leading-none sm:h-10 sm:w-10 sm:text-base">
-                              0{team.lane}
-                            </span>
-                            <div className="flex flex-col leading-tight">
-                              <h4 className="text-base uppercase text-zinc-950 sm:text-lg">
-                                {team.name}
-                              </h4>
-                              <p className="text-xs font-bold uppercase text-zinc-500 sm:text-sm">
-                                {team.athletes[0]} e {team.athletes[1]}
-                              </p>
-                            </div>
-
-                            <span className="ml-auto flex flex-col rounded-md bg-zinc-950 p-2 text-xs font-bold uppercase leading-tight text-primary sm:text-sm">
-                              {team.box}
-                            </span>
-                          </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-                </div>
-              ))}
+                <BatteryCard
+                  times={battery.times}
+                  teams={battery.teams}
+                  battery={battery.battery}
+                />
+              </div>
             </div>
-          )
-        })}
+          ))}
+        </div>
       </Section>
     </div>
   )

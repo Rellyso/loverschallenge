@@ -23,8 +23,8 @@ export default function Schedules() {
       >
         <div className="flex flex-col gap-4">
           {isBeforeDate && (
-            <div className="flex items-center gap-2 rounded-md bg-yellow-300 p-4">
-              <Info className="h-10 w-10 text-yellow-700" />
+            <div className="flex items-center justify-center gap-2 rounded-md bg-yellow-300 p-4">
+              <Info className="h-8 w-8 text-yellow-700" />
               <span className="text-base leading-relaxed">
                 ihhhh... ainda não tá em tempo hein?! Mas só porque você veio
                 até aqui, vamos deixar vc dar uma espiadinha no leadboard 👀

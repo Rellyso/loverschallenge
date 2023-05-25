@@ -1,7 +1,7 @@
 import { Wod } from '../../(homepage)/components/WodsSection'
 import wods from '../../(homepage)/data/wods.json'
 
-interface Team {
+export interface Team {
   id: number
   name: string
   box: string
@@ -556,5 +556,50 @@ export const wodBatteries = [
         teams: getTeamsByBattery(7),
       },
     ],
+  },
+]
+
+export const batteriesDayOne = [
+  {
+    level: 1,
+    battery: 1,
+    times: ['15:30', '17:15', '19:15'],
+    teams: getTeamsByBattery(1),
+  },
+  {
+    level: 1,
+    battery: 2,
+    times: ['15:43', '17:30', '19:30'],
+    teams: getTeamsByBattery(2),
+  },
+  {
+    level: 1,
+    battery: 3,
+    times: ['15:56', '17:45', '19:45'],
+    teams: getTeamsByBattery(3),
+  },
+  {
+    level: 1,
+    battery: 4,
+    times: ['15:56', '18:00', '20:00'],
+    teams: getTeamsByBattery(4),
+  },
+  {
+    level: 2,
+    battery: 5,
+    times: ['16:22', '18:15', '20:15'],
+    teams: getTeamsByBattery(5),
+  },
+  {
+    level: 2,
+    battery: 6,
+    times: ['16:35', '18:30', '20:30'],
+    teams: getTeamsByBattery(6),
+  },
+  {
+    level: 3,
+    times: ['16:48', '18:45', '20:45'],
+    battery: 7,
+    teams: getTeamsByBattery(7),
   },
 ]
