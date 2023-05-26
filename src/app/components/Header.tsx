@@ -1,35 +1,36 @@
-'use client'
-
 import clsx from 'clsx'
 import Image from 'next/image'
 import Logo from '@/assets/logo-white.svg'
 import Link from 'next/link'
 import { MenuNavItem, MenuNavItems } from '@/components/MenuNavItems'
-import { InstagramLogo, WhatsappLogo } from '@phosphor-icons/react'
 import { MenuNavItemsMobile } from '@/components/MenuNavItemsMobile'
+import { Battery, Home, Instagram, Trophy, Users2 } from 'lucide-react'
 
 const menuItems: MenuNavItem[] = [
   {
     label: 'Início',
     href: '/',
+    icon: <Home />,
   },
   {
     label: 'Baterias',
     href: '/baterias',
+    icon: <Battery />,
   },
   {
     label: 'Leadboard',
     href: '/classificacao',
+    icon: <Trophy />,
   },
   {
     label: 'Instagram',
     href: 'https://instagram.com/crossover.lovers',
-    icon: <InstagramLogo />,
+    icon: <Instagram />,
     external: true,
   },
   {
     label: 'Grupo atletas',
-    icon: <WhatsappLogo />,
+    icon: <Users2 />,
     href: 'https://chat.whatsapp.com/Dk05DuNxkYtIuMTeQvnyOh?fbclid=PAAaZgE1xY3dpmtj3o1SRVh6cbJP5kC1Y3ZcYCez8G9cA_MRu6TRgX-8NZVTE',
     external: true,
   },
