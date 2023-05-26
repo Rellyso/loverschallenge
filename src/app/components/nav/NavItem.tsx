@@ -46,7 +46,7 @@ export function NavItem({
       passHref={external}
     >
       {mobile && icon}
-      {label}
+      {!mobile && label}
       {external && !mobile && <ArrowSquareOut size={12} />}
     </Link>
   )
