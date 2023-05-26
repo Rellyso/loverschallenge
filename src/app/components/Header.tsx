@@ -4,7 +4,13 @@ import Logo from '@/assets/logo-white.svg'
 import Link from 'next/link'
 import { MenuNavItem, MenuNavItems } from '@/components/MenuNavItems'
 import { MenuNavItemsMobile } from '@/components/MenuNavItemsMobile'
-import { CalendarClock, Home, Instagram, Trophy, Users2 } from 'lucide-react'
+import {
+  CalendarClock,
+  FileArchive,
+  Home,
+  Instagram,
+  Trophy,
+} from 'lucide-react'
 
 const menuItems: MenuNavItem[] = [
   {
@@ -29,9 +35,9 @@ const menuItems: MenuNavItem[] = [
     external: true,
   },
   {
-    label: 'Grupo atletas',
-    icon: <Users2 />,
-    href: 'https://chat.whatsapp.com/Dk05DuNxkYtIuMTeQvnyOh?fbclid=PAAaZgE1xY3dpmtj3o1SRVh6cbJP5kC1Y3ZcYCez8G9cA_MRu6TRgX-8NZVTE',
+    label: 'Arquivos',
+    icon: <FileArchive />,
+    href: 'https://drive.google.com/drive/folders/1ZaLTIv0n-iT5q932C9SNSoV8lyTUnsWq?usp=sharing',
     external: true,
   },
 ]
