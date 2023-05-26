@@ -64,7 +64,7 @@ export function Countdown() {
   return (
     <div className="flex flex-col justify-end gap-2 text-right md:justify-center">
       <h2 className="text-xl font-bold sm:text-4xl">
-        Começa em {daysAmount} dias
+        Começa em {daysAmount > 0 && <>{daysAmount} dias</>}
       </h2>
       <div
         className={clsx(
