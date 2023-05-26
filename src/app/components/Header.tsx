@@ -4,7 +4,7 @@ import Logo from '@/assets/logo-white.svg'
 import Link from 'next/link'
 import { MenuNavItem, MenuNavItems } from '@/components/MenuNavItems'
 import { MenuNavItemsMobile } from '@/components/MenuNavItemsMobile'
-import { Battery, Home, Instagram, Trophy, Users2 } from 'lucide-react'
+import { CalendarClock, Home, Instagram, Trophy, Users2 } from 'lucide-react'
 
 const menuItems: MenuNavItem[] = [
   {
@@ -15,10 +15,10 @@ const menuItems: MenuNavItem[] = [
   {
     label: 'Baterias',
     href: '/baterias',
-    icon: <Battery />,
+    icon: <CalendarClock />,
   },
   {
-    label: 'Leadboard',
+    label: 'Classificação',
     href: '/classificacao',
     icon: <Trophy />,
   },

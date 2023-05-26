@@ -25,9 +25,8 @@ export function MenuNavItems({ items }: MenuNavItemsProps) {
             external={item.external}
             key={`${item.label}`}
             href={item.href}
-          >
-            {item.label}
-          </NavItem>
+            label={item.label}
+          />
         )
       })}
     </div>

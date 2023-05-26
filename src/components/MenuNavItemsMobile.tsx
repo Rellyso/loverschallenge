@@ -18,10 +18,10 @@ export function MenuNavItemsMobile({ items }: MenuNavItemsProps) {
           external={item.external}
           key={item.label}
           href={item.href}
+          icon={item.icon}
           mobile
-        >
-          {item.icon}
-        </NavItem>
+          label={item.label}
+        />
       ))}
     </div>
   )
