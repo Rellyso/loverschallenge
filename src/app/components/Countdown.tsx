@@ -62,13 +62,13 @@ export function Countdown() {
   if (currentSeconds < 0) return <div></div>
 
   return (
-    <div className="flex flex-col justify-end gap-2 text-right md:justify-center">
+    <div className="flex flex-col justify-end gap-2 self-end text-right md:justify-center md:self-center">
       <h2 className="text-xl font-bold sm:text-4xl">
         Começa em {daysAmount > 0 && <>{daysAmount} dias</>}
       </h2>
       <div
         className={clsx(
-          'flex items-center justify-center gap-1 font-mono text-2xl font-bold leading-tight text-gray-100',
+          'flex items-center justify-end gap-1 font-mono text-2xl font-bold leading-tight text-gray-100 md:justify-center',
           'sm:text-4xl md:text-6xl',
         )}
       >
