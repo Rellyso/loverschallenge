@@ -1,7 +1,7 @@
 'use client'
 
-import { ArrowSquareOut } from '@phosphor-icons/react'
 import clsx from 'clsx'
+import { ExternalLink } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ReactNode } from 'react'
@@ -47,7 +47,7 @@ export function NavItem({
     >
       {mobile && icon}
       {!mobile && label}
-      {external && !mobile && <ArrowSquareOut size={12} />}
+      {external && !mobile && <ExternalLink className="h-4 w-4" />}
     </Link>
   )
 }

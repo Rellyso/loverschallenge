@@ -1,5 +1,3 @@
-'use client'
-
 import clsx from 'clsx'
 import { ReactNode } from 'react'
 import { NavItem } from '@/app/components/nav/NavItem'
