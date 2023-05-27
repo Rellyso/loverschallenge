@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Countdown } from '../../components/Countdown'
 import MoveDown from '@/assets/move-down-icon.svg'
 import { Button } from '@/app/components/buttons/Button'
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -38,13 +39,14 @@ export function Hero() {
 
         <div className="flex gap-4">
           <Button className="text-lg md:text-2xl" asChild>
-            <a href="#categories">Saiba mais</a>
+            <a href="#edition">Saiba mais</a>
           </Button>
           <Button className="text-lg md:text-2xl" variant="secondary" asChild>
-            Leadboard
+            <Link href="/classificacao">Leadboard</Link>
           </Button>
         </div>
       </div>
+
       <Countdown />
 
       <video
