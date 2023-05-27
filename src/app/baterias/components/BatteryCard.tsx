@@ -1,6 +1,6 @@
 'use client'
 import { useRef } from 'react'
-import { Team } from '../data/batteries'
+import { TeamBattery } from '../data/batteries'
 import { toPng } from 'html-to-image'
 import clsx from 'clsx'
 import Logo from '@/assets/logo-primary.svg'
@@ -11,7 +11,7 @@ import { ArrowDownToLine, ArrowRightLeft } from 'lucide-react'
 interface BatteryCardProps {
   times: string[]
   battery: number
-  teams: Team[]
+  teams?: TeamBattery[]
 }
 
 export function BatteryCard({ teams, times, battery }: BatteryCardProps) {
@@ -45,7 +45,7 @@ export function BatteryCard({ teams, times, battery }: BatteryCardProps) {
         ))}
       </div>
       <div className="flex w-full flex-col">
-        {teams.map((team) => {
+        {teams?.map((team) => {
           return (
             <div
               key={team.id}
@@ -107,7 +107,7 @@ export function BatteryCard({ teams, times, battery }: BatteryCardProps) {
               ))}
             </div>
             <div className="flex w-full flex-col">
-              {teams.map((team) => {
+              {teams?.map((team) => {
                 return (
                   <div
                     key={team.id}

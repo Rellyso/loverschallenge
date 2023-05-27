@@ -14,7 +14,7 @@ export default function Schedules() {
 
   return (
     <div className="flex min-h-screen w-full flex-col items-center justify-center">
-      <div className="relative flex h-screen w-full flex-col items-center justify-center">
+      <div className="relative flex w-full flex-col items-center justify-center py-20">
         <div className="absolute -z-10 h-full w-full bg-lote bg-cover bg-fixed bg-center opacity-30 blur-sm" />
         <h1 className="flex items-baseline gap-4 font-anton text-5xl sm:text-8xl">
           <Trophy className="h-12 w-12 sm:h-24 sm:w-24" />
