@@ -16,14 +16,9 @@ const TIME_COUNT = {
 export function Countdown() {
   const [currentSeconds, setCurrentSeconds] = useState(0)
 
-  console.log()
-
   useEffect(() => {
     if (differenceInSeconds(DATE_DIFFERENCE, new Date()) < 0) {
       setCurrentSeconds(-1)
-      return () => {
-        clearInterval(interval)
-      }
     }
 
     const interval = setInterval(() => {
