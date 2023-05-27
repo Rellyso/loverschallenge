@@ -29,39 +29,40 @@
   },
   {
     "id": 2,
-    "name": "PROVAS 2 E 3 (COMPLEX)",
-    "time": 7,
-    "title": "TIME CAP",
+    "name": "PROVAS 2, 3 E 4",
+    "time": 12,
+    "title": "TOTAL",
     "subtitle": "PROVAS 2, 3 E 4",
     "workout": [
       {
+        "head": "TIME CAP - 7'",
         "description": "ACHAR A CARGA MÁXIMA PARA 3 CLEAN",
         "observations": [
           "Prova 2: PR FEMININO",
           "Prova 3: PR MASCULINO"
+        ],
+        "hasSpace": true
+      },
+      {
+        "head": "2' REST",
+        "hasSpace": true
+      },
+      {
+        "head": "TIME CAP - 3'",
+        "description": "TONELAGEM DE CLEAN AND JERK (SYNC)",
+        "observations": [
+          "SOMATÓRIA: HOMEM + MULHER"
         ]
       }
     ],
     "info": [
-      "2 minutos de rest e continua na prova 3..."
+      "Prova 2: PR FEMININO",
+      "Prova 3: PR MASCULINO",
+      "Prova 4: SOMATÓRIA: HOMEM + MULHER"
     ]
   },
   {
     "id": 3,
-    "name": "PROVA 4",
-    "time": 3,
-    "title": "TIME CAP",
-    "workout": [
-      {
-        "description": "TONELAGEM DE CLEAN AND JERK (SYNC)"
-      }
-    ],
-    "info": [
-      "SOMATÓRIA: HOMEM + MULHER"
-    ]
-  },
-  {
-    "id": 4,
     "name": "PROVA 5",
     "subtitle": "PROVA 5",
     "time": 12,
@@ -146,7 +147,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "PROVAS 6 (A) E 7 (B)",
     "time": 7,
     "title": "FOR TIME",
@@ -195,7 +196,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "PROVAS 8 E 9",
     "time": 8,
     "title": "AMRAP",
@@ -224,6 +225,61 @@
     "info": [
       "F: 30/40/50",
       "M: 40/50/60"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "PROVA FINAL",
+    "time": 15,
+    "title": "3 ETAPAS",
+    "workout": [
+      {
+        "head": "ETAPA 1 - 5'",
+        "reps": 10,
+        "description": "BURPEE BOX JUMP OVER"
+      },
+      {
+        "reps": 20,
+        "description": "KTB SNATCH*"
+      },
+      {
+        "reps": 10,
+        "description": "WALLWALK",
+        "hasSpace": true
+      },
+      {
+        "head": "ETAPA 2 - 5'",
+        "reps": 10,
+        "description": "BURPEE BOX JUMP OVER"
+      },
+      {
+        "reps": 20,
+        "description": "KTB SNATCH*"
+      },
+      {
+        "reps": 10,
+        "description": "WALLWALK",
+        "hasSpace": true
+      },
+      {
+        "head": "ETAPA 3 - 5'",
+        "reps": 10,
+        "description": "BURPEE BOX JUMP OVER"
+      },
+      {
+        "reps": 20,
+        "description": "KTB SNATCH*"
+      },
+      {
+        "reps": 10,
+        "description": "WALLWALK",
+        "hasSpace": true
+      }
+    ],
+    "info": [
+      "4 duplas passam para a final",
+      "Cada etapa elimina uma dupla",
+      "*Nìvel 3: KTB SQUAT SNATCH"
     ]
   }
 ]

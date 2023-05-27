@@ -6,15 +6,21 @@ import clsx from 'clsx'
 import Logo from '@/assets/logo-primary.svg'
 import Image from 'next/image'
 import { Button } from '@/app/components/buttons/Button'
-import { ArrowDownToLine, ArrowRightLeft } from 'lucide-react'
+import { ArrowDownToLine, ArrowRight } from 'lucide-react'
 
 interface BatteryCardProps {
   times: string[]
   battery: number
   teams?: TeamBattery[]
+  fallbackText?: string
 }
 
-export function BatteryCard({ teams, times, battery }: BatteryCardProps) {
+export function BatteryCard({
+  teams,
+  times,
+  battery,
+  fallbackText,
+}: BatteryCardProps) {
   const cardRef = useRef(null)
 
   async function downloadBattery() {
@@ -35,7 +41,7 @@ export function BatteryCard({ teams, times, battery }: BatteryCardProps) {
       <div className="sticky top-0 mb-2 flex w-full justify-center gap-2 pt-2 backdrop-blur-sm">
         {times.map((time, i) => (
           <div className="flex items-center gap-2" key={time}>
-            {i !== 0 && <ArrowRightLeft className="w-4 text-zinc-950" />}
+            {i !== 0 && <ArrowRight className="w-4 text-zinc-950" />}
 
             <div className={clsx('flex flex-col items-center gap-2')}>
               <span className="text-2xl font-bold">{time}</span>
@@ -45,36 +51,45 @@ export function BatteryCard({ teams, times, battery }: BatteryCardProps) {
         ))}
       </div>
       <div className="flex w-full flex-col">
-        {teams?.map((team) => {
-          return (
-            <div
-              key={team.id}
-              className="flex items-center gap-4 border-b-2 py-2 leading-tight last:border-b-0 sm:flex-nowrap"
-            >
-              <span className="flex h-8 w-8 flex-col items-center justify-center rounded-full bg-primary p-2 text-sm leading-none sm:h-10 sm:w-10 sm:text-base">
-                0{team.lane}
-              </span>
-              <div className="flex flex-col leading-tight">
-                <h4 className="text-base uppercase text-zinc-950 sm:text-lg">
-                  {team.name}
-                </h4>
-                <p className="text-xs font-bold uppercase text-zinc-500 sm:text-sm">
-                  {team.athletes[0]} e {team.athletes[1]}
-                </p>
-              </div>
+        {teams?.length === 0 && (
+          <span className="flex items-center self-center py-6">
+            {fallbackText}
+          </span>
+        )}
 
-              <span className="ml-auto flex flex-col rounded-md bg-zinc-950 p-2 text-xs font-bold uppercase leading-tight text-primary sm:text-sm">
-                {team.box}
-              </span>
-            </div>
-          )
-        })}
+        {teams &&
+          teams.map((team) => {
+            return (
+              <div
+                key={team.id}
+                className="flex items-center gap-4 border-b-2 py-2 leading-tight last:border-b-0 sm:flex-nowrap"
+              >
+                <span className="flex h-8 w-8 flex-col items-center justify-center rounded-full bg-primary p-2 text-sm leading-none sm:h-10 sm:w-10 sm:text-base">
+                  0{team.lane}
+                </span>
+                <div className="flex flex-col leading-tight">
+                  <h4 className="text-base uppercase text-zinc-950 sm:text-lg">
+                    {team.name}
+                  </h4>
+                  <p className="text-xs font-bold uppercase text-zinc-500 sm:text-sm">
+                    {team.athletes[0]} e {team.athletes[1]}
+                  </p>
+                </div>
+
+                <span className="ml-auto flex flex-col rounded-md bg-zinc-950 p-2 text-xs font-bold uppercase leading-tight text-primary sm:text-sm">
+                  {team.box}
+                </span>
+              </div>
+            )
+          })}
       </div>
 
-      <Button onClick={downloadBattery} className="mt-2">
-        <ArrowDownToLine className="h-5 w-5" />
-        Baixar horários
-      </Button>
+      {teams?.length !== 0 && (
+        <Button onClick={downloadBattery} className="mt-2">
+          <ArrowDownToLine className="h-5 w-5" />
+          Baixar horários
+        </Button>
+      )}
 
       {/* download section */}
       <div className={clsx('absolute -right-full ', 'h-0 w-0 overflow-hidden')}>

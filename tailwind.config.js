@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#00F0A6',
+        'primary-dark': '#00D895',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

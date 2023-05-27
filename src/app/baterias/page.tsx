@@ -1,8 +1,10 @@
 import { Section } from '../components/Section'
 import { CalendarClock } from 'lucide-react'
-import { batteriesDayOne } from './data/batteries'
-import { BatteryCard } from './components/BatteryCard'
 import { Metadata } from 'next'
+import { Tabs } from '@/components/Tabs'
+import { TabBatteryDayOne } from './components/TabBatteryDayOne'
+import { TabBatteryDayTwo } from './components/TabBatteryDayTwo'
+import { TabBatteryFinal } from './components/TabBatteryFinal'
 
 export const metadata: Metadata = {
   title: 'Baterias e horários',
@@ -23,8 +25,7 @@ export default function Schedules() {
         subtitle="Confira o horário das provas de cada nível"
         className="text-zinc-950"
       >
-        <div className="space-y-4">
-          {/* <div className="flex items-center justify-center gap-2 rounded-md bg-blue-300 p-4">
+        {/* <div className="flex items-center justify-center gap-2 rounded-md bg-blue-300 p-4">
             <Info className="h-8 w-8 text-blue-800" />
             <span className="text-base leading-relaxed">
               Ajustamos as baterias para deixar a visualização dos horários mais
@@ -32,27 +33,18 @@ export default function Schedules() {
               <b>baixar seus horários e compartilhar nas redes</b> 💚😎
             </span>
           </div> */}
-          {batteriesDayOne.map((battery) => (
-            <div key={`${battery.battery}`} className="space-y-8">
-              <div className="space-y-4">
-                <span className="flex items-center gap-2">
-                  <h3 className="text-xl uppercase">
-                    Bateria {battery.battery}
-                  </h3>
-                  <p className="rounded-lg bg-zinc-950 px-2 py-1 text-primary">
-                    Nível {battery.level}
-                  </p>
-                </span>
-
-                <BatteryCard
-                  times={battery.times}
-                  teams={battery.teams}
-                  battery={battery.battery}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
+        <Tabs
+          defaultValue="dayOne"
+          triggers={[
+            { id: 'dayOne', text: 'DAY ONE' },
+            { id: 'dayTwo', text: 'DAY TWO' },
+            { id: 'final', text: 'FINAL' },
+          ]}
+        >
+          <TabBatteryDayOne />
+          <TabBatteryDayTwo />
+          <TabBatteryFinal />
+        </Tabs>
       </Section>
     </div>
   )

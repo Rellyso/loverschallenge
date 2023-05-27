@@ -72,7 +72,7 @@ export function Modal({
             onEscapeKeyDown={handleDismiss}
             className={clsx(
               'fixed z-50',
-              'w-[95vw] max-w-lg rounded-lg px-4 py-8 md:max-w-2xl md:px-6 md:py-12',
+              'h-screen max-h-[100vh] w-screen rounded-lg px-4 py-8 md:h-auto md:max-h-[95vh] md:w-[95vw] md:max-w-lg md:px-6 md:py-12',
               'left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]',
               'bg-zinc-950',
               'border-px border border-zinc-700',
@@ -94,7 +94,9 @@ export function Modal({
               {description}
             </Description>
 
-            {children}
+            <div className="h-full w-full overflow-y-auto overflow-x-hidden pb-8">
+              {children}
+            </div>
 
             {confirmMessage && (
               <>
