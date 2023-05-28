@@ -51,6 +51,7 @@ function getTeamsDayTwoByBattery(battery: number): TeamBattery[] | undefined {
       }
     })
     .filter((t) => t.lane !== 0)
+    .sort((a, b) => a.lane - b.lane)
 }
 
 function getTeamsFinalByBattery(battery: number): TeamBattery[] | undefined {
@@ -64,6 +65,7 @@ function getTeamsFinalByBattery(battery: number): TeamBattery[] | undefined {
       }
     })
     .filter((t) => t.lane !== 0)
+    .sort((a, b) => a.lane - b.lane)
 }
 
 export function getWodById(wodId: number): Wod {
